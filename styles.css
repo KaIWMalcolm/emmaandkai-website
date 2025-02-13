@@ -9,16 +9,12 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
     color: #4a4a4a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
   }
   
   /* Header with Names */
   .names-header {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    padding: 20px 0;
   }
   
   .names-header h1 {
@@ -34,6 +30,8 @@
     padding: 50px 80px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;       /* Center container */
+    margin: 40px auto;      /* Center container */
   }
   
   .timer-container h2 {
@@ -89,22 +87,23 @@
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
-    width: 80px;
-    height: 80px;
+    width: 100px;      /* Bigger circle */
+    height: 100px;
     background-color: #fff;
-    color: #e60073;           /* Pink arrow color */
-    font-size: 3rem;         /* Large arrow */
+    color: #e60073;    /* Pink arrow color */
+    font-size: 4rem;   /* Larger arrow text */
     border-radius: 50%;
-    text-decoration: none;   /* Remove link underline */
+    text-decoration: none; /* Remove link underline */
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 999;            /* So it stays on top */
+    z-index: 999;      /* Stays on top of other elements */
     border: none;
     cursor: pointer;
   }
   
+  /* Hover effect makes the button slightly larger */
   .nav-button:hover {
     transform: translateY(-50%) scale(1.1);
   }
