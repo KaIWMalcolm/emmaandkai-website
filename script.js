@@ -1,5 +1,5 @@
 // Set the date/time you started going out (YYYY-MM-DDTHH:MM:SS)
-const startDate = new Date("2023-09-11T15:30:03");
+const startDate = new Date("2023-11-09T15:30:03");
 
 // Function to calculate the difference in years, months, days, hours, minutes, and seconds
 function getTimeDifference(start, end) {
