@@ -16,11 +16,21 @@
   }
   
   .timer-container {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-    padding: 40px 60px;
+    padding: 50px 80px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .names {
+    font-size: 2rem;
+    color: #e60073;
+    margin-bottom: 10px;
+  }
+  
+  .heart-inline {
+    color: #e60073;
   }
   
   h1 {
@@ -31,8 +41,9 @@
   
   .timer {
     display: flex;
+    flex-wrap: wrap;
     gap: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
@@ -41,17 +52,16 @@
   .timer span {
     background-color: #fff;
     border-radius: 8px;
-    padding: 10px 14px;
-    min-width: 60px;
+    padding: 12px 16px;
+    min-width: 70px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-weight: bold;
   }
   
-  /* Optional small heart animation at the bottom */
   .heart {
     display: inline-block;
     color: #e60073;
-    font-size: 2rem;
+    font-size: 2.5rem;
     animation: pulse 1s infinite alternate;
     margin-top: 20px;
   }
@@ -64,3 +74,4 @@
       transform: scale(1.2);
     }
   }
+  
