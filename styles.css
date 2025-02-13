@@ -1,35 +1,41 @@
-/* Reset default margins and padding */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
   
+  /* Body styling */
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
     color: #4a4a4a;
     min-height: 100vh;
+    /* Remove or change any 'display: flex; flex-direction: column; align-items: center;'
+       if it conflicts with your layout. */
   }
   
   /* 
-    A flex container that places:
-    [Memories button]  [Timer box]  [Map button]
-    on the same horizontal line
+    This container will hold:
+     - Memories button (left)
+     - Timer box (center)
+     - Map button (right)
   */
   .main-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;             /* space between each item */
-    padding-top: 30px;     /* some space from the top */
+    display: flex;               /* put items in a row */
+    justify-content: space-between; 
+    align-items: center;         /* vertically center them */
+    width: 90%;                  /* or any width you want */
+    max-width: 1200px;           /* limit max width so it doesn't stretch too far */
+    margin: 40px auto;           /* center horizontally, add top margin */
+    gap: 20px;                   /* optional spacing between items */
   }
   
-  /* Styles for your clickable buttons */
+  /* Style the links as real buttons */
   .btn {
-    background-color: #e60073;   /* Pinkish background */
+    background-color: #e60073;  
     color: #fff;
-    text-decoration: none;       /* Remove underlines for links */
+    text-decoration: none;      
     padding: 15px 20px;
     border: none;
     border-radius: 8px;
@@ -40,21 +46,8 @@
     transition: background-color 0.3s ease;
   }
   
-  /* Hover effect on the button */
   .btn:hover {
     background-color: #cc0066;
-  }
-  
-  /* Header with Names */
-  .names-header {
-    margin-bottom: 20px;
-  }
-  
-  /* Increase the font size for "Kai ♥ Emma" */
-  .names-header h1 {
-    font-size: 5rem; 
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   /* Timer Container Box */
@@ -63,11 +56,21 @@
     border-radius: 12px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  
-    /* Increase padding to make the box bigger */
-    padding: 100px 150px; 
+    padding: 100px 150px;
   }
   
+  /* Names Header */
+  .names-header {
+    margin-bottom: 20px;
+  }
+  
+  .names-header h1 {
+    font-size: 5rem;  
+    color: #e60073;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Timer Container Headline */
   .timer-container h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -94,7 +97,7 @@
     font-weight: bold;
   }
   
-  /* Heart Styling */
+  /* Heart Animation */
   .heart {
     display: inline-block;
     color: #e60073;
