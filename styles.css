@@ -5,58 +5,56 @@
     box-sizing: border-box;
   }
   
+  /* BODY */
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
     color: #4a4a4a;
-    /* Removed flex so header stays at the top */
     min-height: 100vh;
   }
   
-  /* Header with Names */
-  .names-header {
+  /* HEADER */
+  .main-header {
     text-align: center;
     padding: 20px 0;
   }
   
-  .names-header h1 {
+  .main-header h1 {
     font-size: 4rem;
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
+  /* Pink heart inline */
   .heart-inline {
     color: #e60073;
   }
   
-  /* Navigation Menu Styles */
-  .top-nav {
-    margin-top: 20px;
-  }
-  
+  /* NAV BAR */
   .top-nav ul {
-    list-style: none;
+    list-style: none; /* Remove bullets */
     display: flex;
-    justify-content: center; /* Center the entire menu */
-    gap: 40px;               /* Spacing between links */
+    justify-content: center; /* Center the menu items */
+    gap: 30px;              /* Space between each link */
+    margin-top: 20px;
   }
   
   .top-nav a {
     text-decoration: none;
-    color: #e60073;          /* Pink text for links */
-    font-weight: bold;
-    font-size: 1.2rem;
+    color: #e60073;          /* Pink text for normal state */
+    background-color: #fff;  /* White background for contrast */
     padding: 8px 16px;
-    border-radius: 6px;
-    transition: background-color 0.2s, color 0.2s;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
   }
   
   .top-nav a:hover {
-    background-color: #fff;
-    color: #e60073;
+    background-color: #e60073;  /* Flip to pink background */
+    color: #fff;                /* White text on hover */
   }
   
-  /* Timer Container Box */
+  /* TIMER CONTAINER */
   .timer-container {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
@@ -64,7 +62,7 @@
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     max-width: 600px;
-    margin: 40px auto; /* Center the container */
+    margin: 40px auto; /* Center horizontally */
   }
   
   .timer-container h2 {
@@ -73,7 +71,7 @@
     color: #e60073;
   }
   
-  /* Timer Display */
+  /* TIMER DISPLAY */
   .timer {
     display: flex;
     flex-wrap: wrap;
@@ -93,7 +91,7 @@
     font-weight: bold;
   }
   
-  /* Heart Styling */
+  /* Animated Heart */
   .heart {
     display: inline-block;
     color: #e60073;
