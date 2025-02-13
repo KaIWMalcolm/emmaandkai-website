@@ -9,21 +9,50 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
     color: #4a4a4a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     min-height: 100vh;
+  }
+  
+  /* 
+    A flex container that places:
+    [Memories button]  [Timer box]  [Map button]
+    on the same horizontal line
+  */
+  .main-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;             /* space between each item */
+    padding-top: 30px;     /* some space from the top */
+  }
+  
+  /* Styles for your clickable buttons */
+  .btn {
+    background-color: #e60073;   /* Pinkish background */
+    color: #fff;
+    text-decoration: none;       /* Remove underlines for links */
+    padding: 15px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect on the button */
+  .btn:hover {
+    background-color: #cc0066;
   }
   
   /* Header with Names */
   .names-header {
-    margin-top: 0;  /* Adjust as you wish */
     margin-bottom: 20px;
   }
   
   /* Increase the font size for "Kai ♥ Emma" */
   .names-header h1 {
-    font-size: 5rem; /* Increased from 3rem to 5rem */
+    font-size: 5rem; 
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
@@ -35,8 +64,8 @@
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   
-    /* Significantly increase padding so the box is bigger */
-    padding: 100px 150px;  
+    /* Increase padding to make the box bigger */
+    padding: 100px 150px; 
   }
   
   .timer-container h2 {
