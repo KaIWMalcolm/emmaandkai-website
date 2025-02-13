@@ -17,14 +17,11 @@
   
   /* Header with Names */
   .names-header {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0; /* or a smaller value */
+    margin-bottom: 20px; /* keep a little spacing */
   }
-  
   .names-header h1 {
-    font-size: 4rem;
-    color: #ffffff;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: 3rem; /* maybe slightly smaller inside the box */
   }
   
   /* Timer Container Box */
