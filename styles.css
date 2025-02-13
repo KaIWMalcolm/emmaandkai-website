@@ -1,0 +1,66 @@
+/* Reset some default margins/padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
+    color: #4a4a4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .timer-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    padding: 40px 60px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #e60073;
+  }
+  
+  .timer {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .timer span {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px 14px;
+    min-width: 60px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+  }
+  
+  /* Optional small heart animation at the bottom */
+  .heart {
+    display: inline-block;
+    color: #e60073;
+    font-size: 2rem;
+    animation: pulse 1s infinite alternate;
+    margin-top: 20px;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
