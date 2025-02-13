@@ -1,4 +1,4 @@
-/* Reset some default margins/padding */
+/* Reset default margins and padding */
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +10,24 @@
     background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
     color: #4a4a4a;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
   }
   
+  /* Header with Names */
+  .names-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .names-header h1 {
+    font-size: 4rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Timer Container Box */
   .timer-container {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
@@ -23,22 +36,13 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   }
   
-  .names {
-    font-size: 2rem;
-    color: #e60073;
-    margin-bottom: 10px;
-  }
-  
-  .heart-inline {
-    color: #e60073;
-  }
-  
-  h1 {
+  .timer-container h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #e60073;
   }
   
+  /* Timer Display */
   .timer {
     display: flex;
     flex-wrap: wrap;
@@ -58,12 +62,17 @@
     font-weight: bold;
   }
   
+  /* Heart Styling */
   .heart {
     display: inline-block;
     color: #e60073;
     font-size: 2.5rem;
     animation: pulse 1s infinite alternate;
     margin-top: 20px;
+  }
+  
+  .heart-inline {
+    color: #e60073;
   }
   
   @keyframes pulse {
