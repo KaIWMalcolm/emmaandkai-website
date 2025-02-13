@@ -84,3 +84,36 @@
     }
   }
   
+  /* Navigation Buttons */
+  .nav-button {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    color: #e60073;           /* Pink arrow color */
+    font-size: 3rem;         /* Large arrow */
+    border-radius: 50%;
+    text-decoration: none;   /* Remove link underline */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;            /* So it stays on top */
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav-button:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  .left-button {
+    left: 20px;
+  }
+  
+  .right-button {
+    right: 20px;
+  }
+  
