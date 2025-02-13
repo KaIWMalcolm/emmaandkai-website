@@ -9,6 +9,8 @@
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
     color: #4a4a4a;
+    /* Removed flex so header stays at the top */
+    min-height: 100vh;
   }
   
   /* Header with Names */
@@ -23,6 +25,37 @@
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
+  .heart-inline {
+    color: #e60073;
+  }
+  
+  /* Navigation Menu Styles */
+  .top-nav {
+    margin-top: 20px;
+  }
+  
+  .top-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the entire menu */
+    gap: 40px;               /* Spacing between links */
+  }
+  
+  .top-nav a {
+    text-decoration: none;
+    color: #e60073;          /* Pink text for links */
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .top-nav a:hover {
+    background-color: #fff;
+    color: #e60073;
+  }
+  
   /* Timer Container Box */
   .timer-container {
     background-color: rgba(255, 255, 255, 0.9);
@@ -30,8 +63,8 @@
     padding: 50px 80px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;       /* Center container */
-    margin: 40px auto;      /* Center container */
+    max-width: 600px;
+    margin: 40px auto; /* Center the container */
   }
   
   .timer-container h2 {
@@ -69,10 +102,6 @@
     margin-top: 20px;
   }
   
-  .heart-inline {
-    color: #e60073;
-  }
-  
   @keyframes pulse {
     0% {
       transform: scale(1);
@@ -80,39 +109,5 @@
     100% {
       transform: scale(1.2);
     }
-  }
-  
-  /* Navigation Buttons */
-  .nav-button {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100px;      /* Bigger circle */
-    height: 100px;
-    background-color: #fff;
-    color: #e60073;    /* Pink arrow color */
-    font-size: 4rem;   /* Larger arrow text */
-    border-radius: 50%;
-    text-decoration: none; /* Remove link underline */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 999;      /* Stays on top of other elements */
-    border: none;
-    cursor: pointer;
-  }
-  
-  /* Hover effect makes the button slightly larger */
-  .nav-button:hover {
-    transform: translateY(-50%) scale(1.1);
-  }
-  
-  .left-button {
-    left: 20px;
-  }
-  
-  .right-button {
-    right: 20px;
   }
   
