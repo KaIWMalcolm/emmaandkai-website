@@ -14,22 +14,6 @@ body {
 /* Remove or change any 'display: flex; flex-direction: column; align-items: center;'
     if it conflicts with your layout. */
 }
-
-/* 
-This container will hold:
-    - Memories button (left)
-    - Timer box (center)
-    - Map button (right)
-*/
-.main-content {            /* put items in a row */
-    justify-content: space-between; 
-    align-items: center;         /* vertically center them */
-    width: 90%;                  /* or any width you want */
-    max-width: 1200px;           /* limit max width so it doesn't stretch too far */
-    margin: 40px auto;           /* center horizontally, add top margin */
-    gap: 20px;                   /* optional spacing between items */
-}
-
 /* Style the links as real buttons */
 .btn {
     background-color: #e60073;  
