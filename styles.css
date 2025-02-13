@@ -5,64 +5,35 @@
     box-sizing: border-box;
   }
   
-  /* BODY */
   body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(to bottom right, #ffc0cb, #ffb6c1);
     color: #4a4a4a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     min-height: 100vh;
   }
   
-  /* HEADER */
-  .main-header {
-    text-align: center;
-    padding: 20px 0;
+  /* Header with Names */
+  .names-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
-  .main-header h1 {
+  .names-header h1 {
     font-size: 4rem;
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
-  /* Pink heart inline */
-  .heart-inline {
-    color: #e60073;
-  }
-  
-  /* NAV BAR */
-  .top-nav ul {
-    list-style: none; /* Remove bullets */
-    display: flex;
-    justify-content: center; /* Center the menu items */
-    gap: 30px;              /* Space between each link */
-    margin-top: 20px;
-  }
-  
-  .top-nav a {
-    text-decoration: none;
-    color: #e60073;          /* Pink text for normal state */
-    background-color: #fff;  /* White background for contrast */
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-  }
-  
-  .top-nav a:hover {
-    background-color: #e60073;  /* Flip to pink background */
-    color: #fff;                /* White text on hover */
-  }
-  
-  /* TIMER CONTAINER */
+  /* Timer Container Box */
   .timer-container {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
     padding: 50px 80px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 40px auto; /* Center horizontally */
   }
   
   .timer-container h2 {
@@ -71,7 +42,7 @@
     color: #e60073;
   }
   
-  /* TIMER DISPLAY */
+  /* Timer Display */
   .timer {
     display: flex;
     flex-wrap: wrap;
@@ -91,13 +62,17 @@
     font-weight: bold;
   }
   
-  /* Animated Heart */
+  /* Heart Styling */
   .heart {
     display: inline-block;
     color: #e60073;
     font-size: 2.5rem;
     animation: pulse 1s infinite alternate;
     margin-top: 20px;
+  }
+  
+  .heart-inline {
+    color: #e60073;
   }
   
   @keyframes pulse {
@@ -108,4 +83,3 @@
       transform: scale(1.2);
     }
   }
-  
