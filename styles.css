@@ -1,4 +1,4 @@
-/* Reset default margins and padding */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -17,11 +17,17 @@
   
   /* Header with Names */
   .names-header {
-    margin-top: 0; /* or a smaller value */
-    margin-bottom: 20px; /* keep a little spacing */
+    /* Add top margin so it doesn't stick to the top of the screen */
+    margin-top: 40px;
+    margin-bottom: 30px; 
+    text-align: center;
   }
+  
   .names-header h1 {
-    font-size: 3rem; /* maybe slightly smaller inside the box */
+    /* Make the text larger */
+    font-size: 5rem;  
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
   
   /* Timer Container Box */
@@ -80,3 +86,4 @@
       transform: scale(1.2);
     }
   }
+  
