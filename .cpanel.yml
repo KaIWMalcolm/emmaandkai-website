@@ -1,0 +1,4 @@
+---
+deployment:
+  tasks:
+    - /usr/bin/rsync -avz --delete --exclude=".git" $PWD/ /home/emmarpri/public_html/
