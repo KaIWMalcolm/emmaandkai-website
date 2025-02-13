@@ -21,8 +21,7 @@ This container will hold:
     - Timer box (center)
     - Map button (right)
 */
-.main-content {
-    display: flex;               /* put items in a row */
+.main-content {            /* put items in a row */
     justify-content: space-between; 
     align-items: center;         /* vertically center them */
     width: 90%;                  /* or any width you want */
