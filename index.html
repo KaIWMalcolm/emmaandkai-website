@@ -6,25 +6,25 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Header with bigger text, outside the timer box -->
-  <header class="names-header">
-    <h1>Kai <span class="heart-inline">♥</span> Emma</h1>
-  </header>
-
-  <!-- Timer Box -->
-  <div class="timer-container">
-    <h2>We've Been Together For</h2>
-    <div class="timer">
-      <span id="years">0</span> Years
-      <span id="months">0</span> Months
-      <span id="days">0</span> Days
-      <span id="hours">0</span> Hours
-      <span id="minutes">0</span> Minutes
-      <span id="seconds">0</span> Seconds
+    <!-- Remove the separate header and put it inside timer-container -->
+    <div class="timer-container">
+      <!-- Moved here: -->
+      <header class="names-header">
+        <h1>Kai <span class="heart-inline">♥</span> Emma</h1>
+      </header>
+  
+      <h2>We've Been Together For</h2>
+      <div class="timer">
+        <span id="years">0</span> Years
+        <span id="months">0</span> Months
+        <span id="days">0</span> Days
+        <span id="hours">0</span> Hours
+        <span id="minutes">0</span> Minutes
+        <span id="seconds">0</span> Seconds
+      </div>
+      <div class="heart">♥</div>
     </div>
-    <div class="heart">♥</div>
-  </div>
-
-  <script src="script.js"></script>
-</body>
+  
+    <script src="script.js"></script>
+  </body>
 </html>

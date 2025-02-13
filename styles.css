@@ -1,4 +1,4 @@
-/* Reset */
+/* Reset default margins and padding */
 * {
     margin: 0;
     padding: 0;
@@ -17,15 +17,13 @@
   
   /* Header with Names */
   .names-header {
-    /* Add top margin so it doesn't stick to the top of the screen */
-
-    margin-bottom: 30px; 
-    text-align: center;
+    margin-top: 0;  /* Adjust as you wish */
+    margin-bottom: 20px;
   }
   
+  /* Increase the font size for "Kai ♥ Emma" */
   .names-header h1 {
-    /* Make the text larger */
-    font-size: 5rem;  
+    font-size: 5rem; /* Increased from 3rem to 5rem */
     color: #ffffff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   }
@@ -34,9 +32,11 @@
   .timer-container {
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 12px;
-    padding: 50px 80px;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  
+    /* Significantly increase padding so the box is bigger */
+    padding: 100px 150px;  
   }
   
   .timer-container h2 {
